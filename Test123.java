@@ -47,7 +47,8 @@ public class Test123 extends JFrame implements ActionListener{
 		Container cp = getContentPane();
 		cp.add(panel1,BorderLayout.NORTH);
 		cp.add(panel2,BorderLayout.SOUTH);
-	}
+
+	}	
 }
 		
 
