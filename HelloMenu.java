@@ -8,6 +8,10 @@ public class HelloMenu extends JFrame{
 		setSize(300,300);
 		setLocation(300,300);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		JPanel panel = new JPanel();
+
+		panel.add
 		
 		JMenuBar menubar = new JMenuBar();
 		
