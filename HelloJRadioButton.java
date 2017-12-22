@@ -60,7 +60,7 @@ public class HelloJRadioButton extends JFrame implements ActionListener{
 
 		this.rbtn1 = new JRadioButton("max");
 		this.rbtn2 = new JRadioButton("min");
-		this.rbtn3 = new JRadioButton"(average");
+		this.rbtn3 = new JRadioButton("average");
 
 		ButtonGroup btngroup = new ButtonGroup();
 
