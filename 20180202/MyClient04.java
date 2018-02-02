@@ -19,7 +19,11 @@ public class MyClient04 {
         socket = new Socket("172.16.21.56", 4999);
 
         oos = new ObjectOutputStream(socket.getOutputStream());
+<<<<<<< HEAD
         oos.writeObject("学籍番号: 170227 \ngithub user name: nh \nHello from nh");
+=======
+        oos.writeObject("学籍番号: 170169 \ngithub user name: algha \nHello from algha");
+>>>>>>> exam
 
         while(true){
 

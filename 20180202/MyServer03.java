@@ -22,7 +22,11 @@ public class MyServer03 {
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 
             String message = (String) ois.readObject();
+<<<<<<< HEAD
             System.out.println("client: " + message);
+=======
+            System.out.println("from client: " + message);
+>>>>>>> exam
 
               ois.close();
           }catch(ClassNotFoundException ex){

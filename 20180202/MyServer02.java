@@ -25,7 +25,11 @@ public class MyServer02 {
 
           ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 
+<<<<<<< HEAD
           oos.writeObject("Client!!, your id address is: "+addr.getHostAddress());
+=======
+          oos.writeObject("Hi Client, your id address is: "+addr.getHostAddress());
+>>>>>>> exam
 
 
           oos.close();

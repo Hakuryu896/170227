@@ -19,7 +19,11 @@ public class MyClient05 {
         socket = new Socket(IP, 4000);
 
          oos = new ObjectOutputStream(socket.getOutputStream());
+<<<<<<< HEAD
          oos.writeObject("my student number: 170227");
+=======
+         oos.writeObject("my student number: 170169");
+>>>>>>> exam
 
         ois = new ObjectInputStream(socket.getInputStream());
         String message = (String) ois.readObject();
