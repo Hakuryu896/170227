@@ -37,10 +37,17 @@ public class GuiInput extends JFrame implements ActionListener{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		JPanel panel = new JPanel();
-		panel.setLayout(new GridLayout(8,6));
+		
+
+		
+		// panel.setLayout(new GridLayout(7,3));
 
 		JButton btn = new JButton("登録");
 		btn.addActionListener(this);
+
+		// panel.setLayout(new BoxLayout(panel, BoxLayout.LINE_AXIS));
+		panel.setLayout(new GridLayout(10,8));
+		//GroupLayout
 
 		JButton clear = new JButton("削除");
 		clear.addActionListener(this);
@@ -52,16 +59,17 @@ public class GuiInput extends JFrame implements ActionListener{
 		JLabel label1 = new JLabel("名前");
 		JLabel label2 = new JLabel("住所");
 		JLabel seibetu = new JLabel("性別");
-		// JLabel seinen = new JLabel("生年");
 		JLabel tanzyoubi = new JLabel("生年月日");
 		JLabel etc = new JLabel("好きなもの,音楽,特徴,etc");
 
-		jtf1 = new JTextField("",3);
-		jtf2 = new JTextField("",3);
-		gappi = new JTextField("",3);
-		sukinamono = new JTextField("",3);
+		jtf1 = new JTextField("",5);
+		jtf2 = new JTextField("",5);
+		gappi = new JTextField("",5);
+		sukinamono = new JTextField("",5);
 
-		
+		int width = jtf1.getMaximumSize().width;
+    	jtf1.setFont(new Font("Arial", Font.PLAIN, 22));
+
 		panel.add(label1);
 		panel.add(jtf1);
 		panel.add(label2);
@@ -92,9 +100,6 @@ public class GuiInput extends JFrame implements ActionListener{
 			FileWriter fw = new FileWriter(fl);
 
 			BufferedWriter bw = new BufferedWriter(fw);
-
-
-			
 
 				bw.write(msg);
 				
